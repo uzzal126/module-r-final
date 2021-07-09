@@ -1,0 +1,83 @@
+.guides-item {
+    background-color: $white;
+    overflow: hidden;
+    transition: 0.4s;
+    &__image {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        padding: 18px;
+        transition: 0.5s;
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            color: $theme-color-secondary;
+            line-height: 1;
+            position: relative;
+            margin-bottom: 27px;
+            &:before {
+                bottom: -14px;
+                left: 0;
+                right: 0;
+                content: '';
+                height: 1px;
+                width: 70px;
+                margin: auto;
+                position: absolute;
+                background-color: $theme-color-alternate;
+            }
+        }
+        .guides-list {
+            height: 180px; 
+            overflow: hidden;
+            transition: 0.4s;
+            li {
+                margin-bottom: 4px;
+                a {
+                    color: $theme-color-secondary;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover {
+                        color: $theme-color-alternate;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__footer {
+        .btn-guides {
+            display: block;
+            font-size: 16px;
+            padding: 16px 0 18px;
+            background-color: $theme-color-secondary;
+            
+            &:hover {
+                color: $white;
+                background-color: $theme-color-alternate;
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0px 0px 21px 0px rgba(40, 43, 50, 0.29);
+        .guides-item__image {
+            img {
+                margin-top: -30px;
+            }
+        }
+        .guides-item__content {
+            .guides-list {
+                height: 210px;
+            }
+        }
+    }
+}
+
+.custom-scroll {
+    position: relative;
+}

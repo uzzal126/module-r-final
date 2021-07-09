@@ -1,0 +1,71 @@
+//== Typography Variable
+$font-family-base: 'Poppins', sans-serif;
+$heading-font: 'Josefin Sans', sans-serif;
+$icon-font: 'IcoFont';
+$font-size-base: 16px;
+
+// Site Typography Colors
+$paragraph: #151515;
+$paragraph-light: #777777;
+$gray-color: #999999;
+$light-gray: #f2f2f3;
+$light-white: #f4f5f7;
+$ash-color: #d2d2d2;
+
+$transition--cubic:  all .3s cubic-bezier(.645,.045,.355,1);
+
+//== Brand Color
+$theme-color-primary: #1F71D4;
+$theme-color-secondary: #072944;
+$theme-color-alternate: #EC4139;
+$theme-color-dark: darken($theme-color-primary, 15%);
+$theme-color-light: lighten($theme-color-primary, 15%);
+$overlay-color: #072944;
+$bg-dark: #22282e;
+$bg-gray: #f8f8f8;
+$bg-color: #f1f1f1;
+$light-gray: #eaf0fe;
+$bdr-color: #e1e1e1;
+$border-color: #eeeeee;
+
+
+$FF: #94B7D5;
+$FR: #98a7b4;
+
+
+//== Alternative Color
+$white: #fff;
+$offwhite: #f4f4f4;
+$black: #000;
+$black-soft: #333333;
+$navy: #3b5998;
+$pink: #FF69B4;
+$violet: #9933cc;
+$olive: #559137;
+$green: #008000;
+$red: #e74c3c;
+$orange: #f5740a;
+$yellow: #fbbf00;
+$label-new: #3fcc8d;
+$label-discount: #ff5e00;
+
+
+//== Social Media Icons Color
+$facebook: #3B5999;
+$twitter: #1DA1F2;
+$pinterest: #CB2028;
+$youtube: #CC332D;
+$google-plus: #fe6d4c;
+$instagram: #c619b8;
+$linkedin: #007ab7;
+
+//== Responsive Variables
+$xlmax-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$xlmid-device: 'only screen and (min-width: 1200px) and (max-width: 1499px)';
+$xxl-device: 'only screen and (min-width: 1600px)';
+$xl-device: 'only screen and (min-width: 1200px)';
+$lg-device: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-device: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-device: 'only screen and (max-width: 767px)';
+$xs-device: 'only screen and (max-width: 575px)';
+$xxs-device: 'only screen and (max-width: 479px)';

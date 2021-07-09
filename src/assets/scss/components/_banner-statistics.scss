@@ -1,0 +1,219 @@
+/*----- banner statistics area start -----*/
+.banner-statistics-area {
+    padding-top: 40px;
+}
+.banner-statistics {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+    &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        pointer-events: none;
+        z-index: 1;
+        background: linear-gradient(0deg, #000, transparent 40%);
+    }
+    .banner-content {
+        bottom: 13px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+        .name {
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+        .shop-now {
+            color: $white;
+            font-size: 15px;
+            position: relative;
+            &:before {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                content: '';
+                position: absolute;
+                background-color: #d7d7d7;
+            }
+            &:hover {
+                color: $overlay-color;
+                &:before {
+                    background-color: $overlay-color;
+                }
+            }
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+/*----- banner statistics area end -----*/
+
+/*----- coupon banner css start -----*/
+.coupon-banner-container {
+    display: flex;
+    height: 598px;
+    //res
+    @media #{$lg-device, $md-device}{
+        height: 400px;
+    }
+    @media #{$sm-device}{
+        height: 300px;
+    }
+    @media #{$xxs-device}{
+        display: block;
+        height: auto;
+    }
+}
+.coupon-banner-img {
+    position: relative;
+    background-image: url('../img/bg/coupon-banner-bg.jpg');
+    width: 80%;
+    //res
+    @media #{$sm-device}{
+        width: 70%;
+    }
+    @media #{$xxs-device}{
+        width: 100%;
+        height: 300px;
+    }
+    .title {
+        color: $white;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1.2;
+        top: 120px;
+        right: 125px;
+        position: absolute;
+        //res
+        @media #{$lg-device, $md-device}{
+            font-size: 30px;
+            top: 100px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        @media #{$sm-device}{
+            font-size: 24px;
+            top: 60px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        @media #{$xs-device}{
+            top: 35px;
+        }
+    }
+}
+.coupon-small-banner {
+    position: relative;
+    background-image: url('../img/bg/coupon-banner-small-bg.jpg');
+    width: 20%;
+    //res
+    @media #{$sm-device}{
+        width: 30%;
+    }
+    @media #{$xxs-device}{
+        width: 100%;
+        height: 300px;
+    }
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .coupon-btn {
+        color: #1a4161;
+        font-weight: 600;
+        line-height: 1.4;
+        bottom: 28px;
+        left: 30px;
+        position: absolute;
+        i {
+            font-size: 20px;
+            vertical-align: middle;
+        }
+        &:hover {
+            color: $theme-color-alternate;
+        }
+        @media #{$md-device, $sm-device}{
+            left: 10px;
+        }
+    }
+}
+/*----- coupon banner css end -----*/
+
+/*----- promotional banner css start -----*/
+.promotional-banner-area {
+    height: 236px;
+    background-image: url('../img/bg/cat-banner.jpg');
+    position: relative;
+    //res
+    @media #{$sm-device}{
+        height: 290px;
+    }
+}
+.promotional-banner {
+    &__content {
+        top: 50%;
+        left: 0;
+        position: absolute;
+        padding: 0 65px;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        //res
+        @media #{$sm-device}{
+            padding: 0 15px;
+        }
+
+        .title {
+            font-size: 48px;
+            margin-bottom: 14px;
+            img {
+                vertical-align: text-bottom;
+                //res
+                @media #{$lg-device, $md-device, $sm-device}{
+                    vertical-align: -webkit-baseline-middle;
+                    vertical-align: -moz-middle-with-baseline;
+                    width: 120px;
+                }
+            }
+            //res
+            @media #{$lg-device, $md-device}{
+                font-size: 36px;
+            }
+            @media #{$sm-device}{
+                font-size: 30px;
+            }
+        }
+        .btn-shop {
+            color: $black;
+            font-size: 18px;
+            background-color: $white;
+            padding: 16px 38px;
+            text-transform: uppercase;
+            &:hover {
+                color: $white;
+                background-color: $theme-color-alternate;
+            }
+            //res
+            @media #{$lg-device, $md-device, $sm-device}{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+/*----- promotional banner css end -----*/

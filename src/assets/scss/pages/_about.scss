@@ -1,0 +1,101 @@
+
+/*----- about section css start -----*/
+.about-header {
+    margin-bottom: 23px;
+    .header {
+        color: #072944;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: -10px;
+    }
+    p {
+        color: #144262;
+
+    }
+}
+.about-details {
+    p {
+        column-count: 2;
+        @media #{$sm-device}{
+            column-count: 1; 
+        }
+    }
+    .social-link {
+        margin-top: 35px;
+        .label {
+            color: #072944;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}
+/*----- about section css end -----*/
+
+
+/*----- team section css start -----*/
+.team-member {
+    margin-top: 70px;
+    &:first-child {
+        margin-top: 0 !important;
+    }
+    &__image {
+        @media #{$md-device, $sm-device}{
+            text-align: center;
+            margin-bottom: 35px;
+        }
+    }
+    &__details {
+        .name {
+            font-size: 28px;
+            font-weight: 600;
+            color: $theme-color-secondary;
+            margin-bottom: 25px;
+            padding-bottom: 23px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .designation {
+            color: $theme-color-secondary;
+            font-weight: 400;
+            padding-bottom: 26px;
+        }
+        p {
+            color: #144262;
+            line-height: 1.6;
+            margin-bottom: 26px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+/*----- team section css end -----*/
+
+/*----- contact link start -----*/
+.contact-link {
+    .sub-link {
+        font-weight: 600;
+        line-height: 1;
+        margin-top: -6px;
+        margin-bottom: 15px;
+    }
+    .link {
+        font-size: 42px;
+        font-weight: 700;
+        display: inline-block;
+        line-height: 1;
+        margin-bottom: -6px;
+        color: $theme-color-alternate;
+        text-transform: uppercase;
+        // res
+        @media #{$xxs-device}{
+            font-size: 28px;
+        }
+        &:hover {
+            color: $theme-color-primary;
+        }
+    }
+}
+/*----- contact link end -----*/

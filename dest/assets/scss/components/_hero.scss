@@ -1,0 +1,314 @@
+
+/*----- hero section css start -----*/
+.hero {
+    &-area {
+        height: 700px;
+        // res
+        @media #{$lg-device}{
+            height: 600px;
+        }
+        @media #{$md-device}{
+            height: 465px;
+        }
+        @media #{$sm-device}{
+            height: 950px;
+            display: flex;
+            align-items: center;
+        }
+        @media #{$xs-device}{
+            height: 860px;
+        }
+        @media #{$xxs-device}{
+            height: 700px;
+        }
+        
+        /* @media only screen and (min-width: 375px) and (max-width: 412px) {
+            height: 640px;
+        } */
+        /* @media only screen and (min-width: 414px) and (max-width: 574px) {
+            height: 700px;
+        } */
+
+        .swiper-slide {
+            background-color: $white;
+        }
+    }
+    &-image {
+        text-align: right;
+        max-width: 685px;
+        margin-left: auto;
+        padding-top: 85px;
+        padding-bottom: 72px;
+        position: relative;
+        // res
+        @media #{$md-device, $sm-device}{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        @media #{$xxs-device}{
+            padding-top: 15px;
+            padding-bottom: 40px;
+        }
+        &:before {
+            top: 0;
+            left: -80px;
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            background-color: #94B7D5;
+            z-index: -1;
+            // res
+            @media #{$md-device}{
+                left: -40px;
+            }
+            @media #{$sm-device}{
+                display: none;
+            }
+        }
+    }
+    &-content {
+        padding-top: 60px;
+        // res
+        @media #{$md-device, $sm-device}{
+            padding-top: 0;
+        }
+        .sub-title {
+            color: $theme-color-secondary;
+            padding-left: 10px;
+            position: relative;
+            max-width: 440px;
+            line-height: 1.7;
+            @media #{$xxs-device}{
+                line-height: 1.5;
+            }
+            &:before {
+                top: 0;
+                left: 0;
+                content: '';
+                height: 100%;
+                width: 3px;
+                position: absolute;
+                background-color: $theme-color-alternate;
+            }
+        }
+        .title {
+            color: $theme-color-secondary;
+            font-size: 82px;
+            font-weight: 700;
+            font-family: $heading-font;
+            text-transform: uppercase;
+            margin-top: 14px;
+            // res
+            @media #{$xlmid-device}{
+                font-size: 60px;
+            }
+            @media #{$lg-device}{
+                font-size: 50px;
+            }
+            @media #{$md-device}{
+                font-size: 42px;
+            }
+            @media #{$sm-device}{
+                font-size: 36px;
+            }
+            @media #{$xxs-device}{
+                font-size: 24px;
+            }
+        }
+        .sub-title {
+            @media #{$xxs-device}{
+                font-size: 14px;
+            }
+        }
+        .pricing {
+            color: $theme-color-primary;
+            font-size: 54px;
+            font-weight: 600;
+            margin-top: 5px;
+            // res
+            @media #{$md-device, $sm-device}{
+                font-size: 32px;
+            }
+            @media #{$xxs-device}{
+                font-size: 20px;
+            }
+            del {
+                color: #9d9ea1;
+                font-weight: 400;
+                font-size: 26px;
+                padding-left: 20px;
+                vertical-align: middle;
+                // res
+                @media #{$md-device, $sm-device}{
+                    font-size: 20px;
+                }
+            }
+        }
+        .hero-btn {
+            margin-top: 40px;
+            @media #{$md-device, $sm-device}{
+                margin-top: 30px;
+            }
+            @media #{$xxs-device}{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.hero-btn {
+    .btn-default {
+        @media #{$xxs-device}{
+            font-size: 16px;
+            padding: 12px 20px 10px;
+        }
+    }
+}
+/*----- hero section css end -----*/
+
+/*----- hero style two css start -----*/
+.hero-area {
+    &.hero-style-two {
+        height: inherit;
+        .slider-item {
+            height: 800px;
+            display: flex;
+            align-items: center;
+            background-color: $white;
+            //res
+            @media #{$lg-device, $md-device}{
+                height: 600px;
+            }
+            @media #{$sm-device}{
+                height: 500px;
+            }
+        }
+        .hero-content {
+            padding-top: 0;
+            .sub-title {
+                color: $white;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 0;
+                text-transform: uppercase;
+                &:before {
+                    display: none;
+                }
+            }
+            .title {
+                color: $theme-color-primary;
+                font-size: 72px;
+                line-height: 1.2;
+                margin-top: 0;
+                //res
+                @media #{$lg-device, $md-device}{
+                    font-size: 50px;
+                }
+                @media #{$sm-device}{
+                    font-size: 40px;
+                }
+            }
+            .desc {
+                color: $white;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-top: 13px;
+            }
+            .pricing {
+                color: $theme-color-alternate;
+                margin-top: 20px;
+                del {
+                    color: $white;
+                }
+            }
+            .hero-btn {
+                margin-top: 45px;
+                //res
+                @media #{$sm-device}{
+                    margin-top: 30px;
+                }
+                .btn-default {
+                    font-size: 20px;
+                    background-color: $theme-color-secondary;
+                    padding: 17px 30px 14px;
+                    //res
+                    @media #{$xs-device} {
+                        font-size: 16px;
+                        padding: 14px 20px 12px;
+                    }
+                    &:hover {
+                        background-color: $theme-color-alternate;
+                    }
+                }
+            }
+        }
+        .slider-item {
+            &--two {
+                .hero-content {
+                    .sub-title {
+                        color: $theme-color-primary;
+                    }
+                    .title {
+                        color: $overlay-color;
+                    }
+                    .desc {
+                        color: $overlay-color;
+                    }
+                    .pricing {
+                        color: $theme-color-primary;
+                        del {
+                            color: #9d9ea1;
+                        }
+                    }
+                    .hero-btn {
+                        .btn-default {
+                            background-color: $theme-color-alternate;
+                            &:hover {
+                                background-color: $overlay-color;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+.hero-content {
+    & > * {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+}
+.swiper-slide-active {
+    & .hero-content {
+
+        // All Element Selector
+        & > * {
+            animation-name: fadeInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            }
+            
+        }
+    }
+}
+/*----- hero style two css end -----*/

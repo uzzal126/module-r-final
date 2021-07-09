@@ -1,0 +1,132 @@
+/*----- best product css start -----*/
+.best-product-area {
+    margin-top: -60px;
+    @media #{$sm-device}{
+        margin-top: -32px;
+    }
+
+    .swiper-container {
+        margin: 0 30px;
+        @media #{$sm-device}{
+            margin: 0 15px
+        }
+    }
+
+    .swiper-slide {
+        &-active {
+            .best-product {
+                .best-product__button {
+                    .btn {
+                        background-color: #e4f9f9;
+                        color: $theme-color-primary;
+                    }
+                }
+                .best-product__image svg {
+                    .st0 {
+                        fill: #1F71D4;
+                    }
+                    .st1 {
+                        fill: #1F71D4;
+                    }
+                }
+            }
+        }
+    }
+}
+.best-product {
+    border: 1px solid #98b8d3;
+    background-color: $white;
+    &__inner {
+        padding: 30px;
+        // res
+        @media #{$md-device, $sm-device}{
+            padding: 15px;
+            text-align: center;
+        }
+    }
+    &__image {
+        position: relative;
+        svg {
+            left: 0;
+            right: 0;
+            top: -6px;
+            margin: auto;
+            max-width: 170px;
+            position: absolute;
+        }
+        .st3 {
+            font-weight: 700;
+        }
+        .st5 {
+            &:before {
+                content: "\f000";
+                font-family: IcoFont!important;
+                position: absolute;
+            }
+        }
+
+    }
+    &__content {
+        margin: 0 30px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e6e6e6;
+        // res
+        @media #{$md-device, $sm-device}{
+            margin: 0 15px;
+        }
+        .title {
+            color: #072944;
+            line-height: 1.3;
+            // res
+            @media #{$md-device}{
+                font-size: 20px;
+            }
+            &:hover {
+                color: $theme-color-alternate;
+            }
+        }
+        .ratings {
+            margin-top: 20px;
+        }
+    }
+    &__button {
+        margin: 40px 0;
+        .btn {
+            font-size: 18px;
+            font-weight: 700;
+            color: $theme-color-alternate;
+            font-family: $heading-font;
+            background-color: #f9eeee;
+            text-transform: uppercase;
+            display: block;
+            padding: 20px 0 17px;
+            @media #{$xxs-device}{
+                font-size: 16px;
+            }
+            &:hover {
+                background-color: #e4f9f9;
+                color: $theme-color-primary;
+            }
+        }
+    }
+    &.active {
+        .best-product__button {
+            .btn {
+                background-color: #e4f9f9;
+                color: $theme-color-primary;
+            }
+        }
+    }
+    &:hover {
+        .best-product__image {
+            img {
+                filter: grayscale(5);
+            }
+        }
+    }
+}
+.ratings {
+    line-height: 1;
+    color: $theme-color-alternate;
+}
+/*----- best product css end -----*/

@@ -1,0 +1,47 @@
+<!-- Start Header Area -->
+<header class="header-area">
+    <!-- desktop header start -->
+    <div class="desktop-header d-none d-lg-block">
+        <div class="container large-container">
+            <div class="header-top">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="header-top__search">
+                            <form action="#" class="position-relative">
+                                <button type="submit" class="search-btn"><i class="icofont-search"></i></button>
+                                <input type="text" class="search-field" placeholder="Type your search here...">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="logo-area text-center">
+                            <a href="index-2.html">
+                                <img src="assets/img/logo/logo.png" alt="brand logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-top__action-btn">
+                            <a href="compare.html"><i class="icofont-law-alt-2"></i> Compare</a>
+                            <a href="compare.html"><i class="icofont-heart"></i> Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-navigation sticky">
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        @@include('navbar.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- desktop header end -->
+
+    <!-- mobile header start -->
+    @@include('mobile-header.html')
+    <!-- mobile header end -->
+    
+</header>

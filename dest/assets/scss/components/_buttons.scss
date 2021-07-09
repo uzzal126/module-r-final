@@ -1,0 +1,46 @@
+/*------- Buttons Style here -------*/
+.btn {
+    color: $white;
+    line-height: 1;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: 500;
+    background-color: $theme-color-alternate;
+    
+    &-default {
+        color: $white;
+        font-size: 18px;
+        background-color: $theme-color-alternate;
+        line-height: 1;
+        padding: 17px 45px 14px;
+        text-transform: uppercase;
+        // res
+        @media #{$xs-device}{
+            font-size: 16px;
+            padding: 14px 18px 11px;
+        }
+        &:hover {
+            color: $white;
+            background-color: $theme-color-secondary;
+        }
+    }
+    &-discover {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+    &-embed {
+        font-size: 16px;
+        border-radius: 50px;
+        background-color: $theme-color-secondary;
+        &:hover {
+            background-color: $theme-color-alternate;
+        }
+    }
+    &-newsletter {
+        font-size: 16px;
+        border-radius: 50px;
+        background-color: $theme-color-primary;
+        padding: 17px 20px 14px;
+        width: 100%;
+    }
+}

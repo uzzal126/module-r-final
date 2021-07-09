@@ -1,0 +1,70 @@
+/*----- contact page css start -----*/
+.contact-title {
+    color: #072944;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+.contact-info {
+    p {
+        color: #144262;
+        padding-right: 10px;
+    }
+    .support-mail {
+        color: #144262;
+        margin-top: 28px;
+        margin-bottom: 23px;
+        a {
+            color: $theme-color-alternate;
+            &:hover {
+                color: $theme-color-primary;
+            }
+        }
+    }
+    .social-link {
+        .label {
+            color: #072944;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+/*----- contact form style css start -----*/
+.contact-form {
+    @media #{$md-device, $sm-device}{
+        padding-top: 70px;
+    }
+    .input-field {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 30px;
+        transition: 0.4s;
+        &:hover {
+            border-bottom: 1px solid #5ecbcb;
+        }
+        &:focus {
+            border-bottom-color: #5ecbcb;
+        }
+    }
+    textarea {
+        height: 105px;
+        padding-top: 15px;
+    }
+    .btn {
+        background-color: $theme-color-primary;
+        &:hover {
+            background-color: $theme-color-alternate;
+        }
+    }
+    // placeholder text style
+    ::placeholder {
+        color: #98a7b4;
+        font-style: normal;
+    }
+}
+/*----- contact form style css end -----*/
+
+/*----- contact page css end -----*/

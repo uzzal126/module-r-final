@@ -1,0 +1,142 @@
+/*------ Start Compare Page Wrapper -----*/
+
+.compare-inner {
+    .heading {
+        color: $overlay-color;
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 35px;
+        line-height: 1;
+        margin-top: -5px;
+    }
+    .continue-shipping {
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: $theme-color-primary;
+        margin-top: 30px;
+        &:hover {
+            background-color: $theme-color-alternate;
+        }
+    }
+}
+
+.compare-table {
+    & .table {
+        & tbody {
+            & tr {
+                & td {
+                    color: #636363;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding: 10px 20px;
+                    border-color: #dddddd;
+
+                    &.first-column {
+                        min-width: 175px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $black-soft;
+                        background-color: #f2f2f2;
+                        margin: 0;
+                        position: relative;
+
+                        .custom-control {
+                            bottom: 25px;
+                            left: auto;
+                            position: absolute;
+                        }
+                        .custom-control-label {
+                            color: $overlay-color;
+                            font-size: 14px;
+                            &:before {
+                                border: 2px solid $theme-color-primary;
+                            }
+                        }
+                    }
+
+                    &.product-image-block {
+                        min-width: 310px;
+                        padding: 35px 20px 55px;
+                        vertical-align: bottom;
+                        text-align: center;
+                        position: relative;
+
+                        /* @media #{$sm-device} {
+                            min-width: 220px;
+                        } */
+
+                        .remove-btn {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            border-top: 20px solid $theme-color-secondary;
+                            border-right: 20px solid $theme-color-secondary;
+                            border-left: 20px solid transparent;
+                            border-bottom: 20px solid transparent;
+                            i {
+                                color: $white;
+                                font-size: 12px;
+                                position: absolute;
+                                margin-top: -13px;
+                                margin-left: 3px;
+                            }
+                            &:hover {
+                                i {
+                                    color: $theme-color-alternate;
+                                }
+                            }
+                        }
+
+                        & .image {
+                            margin: 32px 0 40px;
+                            display: block;
+                        }
+
+                        & .title {
+                            color: $overlay-color;
+                            font-size: 24px;
+                            font-weight: 500;
+                            &:hover {
+                                color: $theme-color-primary;
+                            }
+                        }
+                        .btn-compare {
+                            font-size: 14px;
+                            font-weight: 600;
+                            padding: 10px 24px;
+                            box-shadow: 0px 1px 21px 2px #ffb5b5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.compare-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    .price-box {
+        .price {
+            color: $theme-color-primary;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1;
+            padding-right: 8px;
+        }
+    }
+    .add-wishlist {
+        color: #999;
+        font-size: 14px;
+        &:hover {
+            color: $theme-color-primary;
+        }
+    }
+}
+/*------ end Compare Page Wrapper -----*/

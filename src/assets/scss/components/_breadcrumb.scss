@@ -1,0 +1,104 @@
+/*----- breadcrumb style css start -----*/
+.breadcrumb-wrapper {
+    .last-update {
+        color: $white;
+        display: block;
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+    .page-title {
+        color: $white;
+        text-transform: none;
+        &:after {
+            background-color: $white;
+        }
+    }
+    &.breadcrumb-center {
+        text-align: center;
+        .page-title {
+            &:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .breadcrumb {
+            justify-content: center;
+        }
+    }
+}
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 22px;
+
+    .breadcrumb-item {
+        line-height: 1;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $white;
+        padding: 0;
+        text-shadow: 0 0 8px rgba(0,0,0,.70), 0 0 8px rgba(0,0,0,.70);
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: $theme-color-alternate;
+            }
+        }
+
+        &:before {
+            color: $white;
+            content: "\ea94";
+            font-size: 18px;
+            font-family: $icon-font;
+            margin: 0 5px;
+            padding-right: 0;
+        }
+
+        &:first-child {
+            &::before {
+                display: none;
+            }
+        }
+
+        &.active {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.breadcrumb-style-two {
+    .breadcrumb {
+        background-color: #ededed;
+        border-radius: 0;
+        margin-top: 0;
+        padding: 37px 80px;
+        //res
+        @media #{$xs-device} {
+            padding: 37px 30px;
+        }
+        .breadcrumb-item {
+            color: $theme-color-alternate;
+            text-shadow: none;
+            a {
+                color: $overlay-color;
+                &:hover {
+                    color: $theme-color-alternate;
+                }
+            }
+            &:before {
+                color: $overlay-color;
+            }
+            &:last-child {
+                //res
+                @media #{$xxs-device} {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*----- breadcrumb style css end -----*/
