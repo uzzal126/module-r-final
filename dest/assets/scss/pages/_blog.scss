@@ -1,5 +1,5 @@
-
 /*----- blog title start -----*/
+
 .blog-title {
     padding: 33px 0;
     .title {
@@ -7,9 +7,13 @@
         font-weight: 600;
     }
 }
+
+
 /*----- blog title end -----*/
 
+
 /*----- blog post start -----*/
+
 .blog-post {
     &__image {
         img {
@@ -35,7 +39,7 @@
             margin-top: 10px;
             margin-bottom: 15px;
             // res
-            @media #{$lg-device, $xxs-device}{
+            @media #{$lg-device, $xxs-device} {
                 font-size: 14px;
             }
             a {
@@ -72,7 +76,7 @@
             position: relative;
             color: $theme-color-secondary;
             //res
-            @media #{$xs-device}{
+            @media #{$xs-device} {
                 font-size: 20px;
             }
             &:hover {
@@ -89,7 +93,7 @@
             }
         }
         &--desc {
-            color: #98a7b4;
+            color: #666;
             font-size: 18px;
             line-height: 1.5;
             margin-bottom: 15px;
@@ -109,9 +113,13 @@
         color: $theme-color-alternate;
     }
 }
+
+
 /*----- blog post end -----*/
 
+
 /*----- blog post style 2 start -----*/
+
 .blog-post {
     &__style-2 {
         .blog-post__content {
@@ -129,20 +137,25 @@
         }
     }
 }
+
+
 /*----- blog post style 2 end -----*/
 
+
 /*----- blog details css start -----*/
+
 .blog-details-wrapper {
     background-image: linear-gradient(0, #f2f3f8, #fff);
 }
+
 .blog-details-inner {
     background-color: $white;
     padding: 100px 115px;
     // res
-    @media #{$lg-device}{
+    @media #{$lg-device} {
         padding: 100px 15px;
     }
-    @media #{$md-device, $sm-device}{
+    @media #{$md-device, $sm-device} {
         padding: 70px 15px;
     }
     &.single-post-inner {
@@ -150,6 +163,7 @@
         padding: 0;
     }
 }
+
 .about-author {
     &__inner {
         display: flex;
@@ -158,11 +172,10 @@
         padding-bottom: 30px;
         margin-bottom: 35px;
         // res
-        @media #{$xs-device}{
+        @media #{$xs-device} {
             display: block;
         }
     }
-
     &__info {
         display: flex;
         align-items: center;
@@ -180,10 +193,9 @@
             }
         }
     }
-
     &__social {
         // res
-        @media #{$xs-device}{
+        @media #{$xs-device} {
             margin-top: 20px;
         }
         .label {
@@ -191,7 +203,6 @@
             margin-bottom: 18px;
         }
     }
-
     p {
         color: #1a4161;
         font-size: 18px;
@@ -214,17 +225,17 @@
     justify-content: space-between;
     padding-top: 58px;
     // res
-    @media #{$xs-device}{
+    @media #{$xs-device} {
         display: block;
     }
     h2 {
         color: #072944;
         font-size: 42px;
         // res
-        @media #{$md-device}{
+        @media #{$md-device} {
             font-size: 36px;
         }
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             font-size: 28px;
         }
     }
@@ -232,8 +243,8 @@
         color: #072944;
         font-size: 18px;
         // res
-        @media #{$xs-device}{
-            margin-top: 20px;  
+        @media #{$xs-device} {
+            margin-top: 20px;
         }
     }
 }
@@ -246,14 +257,14 @@
         display: flex;
         justify-content: space-between;
         // res
-        @media #{$xs-device}{
+        @media #{$xs-device} {
             display: block;
         }
         .header-left {
             display: flex;
             padding-right: 30px;
             // res
-            @media #{$xs-device}{
+            @media #{$xs-device} {
                 padding-right: 0;
             }
         }
@@ -282,12 +293,11 @@
             font-size: 28px;
             font-weight: 600;
             // res
-            @media #{$xs-device}{
+            @media #{$xs-device} {
                 font-size: 24px;
             }
         }
     }
-
     &__button {
         margin-top: 45px;
         margin-bottom: 35px;
@@ -298,7 +308,6 @@
             }
         }
     }
-
     &__content {
         p {
             line-height: 1.5;
@@ -333,7 +342,6 @@
             background-color: $theme-color-primary;
         }
     }
-
     .feature-list {
         li {
             color: #072944;
@@ -391,7 +399,7 @@
                     &:before {
                         content: "\eee1";
                         color: $theme-color-alternate;
-                    } 
+                    }
                 }
             }
         }
@@ -417,7 +425,7 @@
 }
 
 .marker {
-    @media #{$xs-device}{
+    @media #{$xs-device} {
         margin-top: 20px;
         margin-left: 20px;
     }
@@ -434,7 +442,6 @@
             border-right: 16px solid $white;
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
-
         }
         img {
             top: 50%;
@@ -471,10 +478,9 @@
     border: 1px solid $theme-color-primary;
     padding: 20px;
     // res
-    @media #{$xxs-device}{
+    @media #{$xxs-device} {
         display: block;
     }
-
     &__thumb {
         width: 100px;
     }
@@ -482,16 +488,15 @@
         padding-left: 15px;
         width: calc(100% - 100px);
         // res
-        @media #{$xxs-device}{
+        @media #{$xxs-device} {
             padding-left: 0;
             width: 100%;
         }
-
         .header {
             display: flex;
             justify-content: space-between;
             // res
-            @media #{$xxs-device}{
+            @media #{$xxs-device} {
                 display: block;
                 padding: 15px 0;
             }
@@ -501,12 +506,12 @@
             }
             .all-post-btn {
                 color: $theme-color-primary;
-                font-size: 16px;  
+                font-size: 16px;
                 font-weight: 400;
                 i {
                     color: $theme-color-alternate;
                     padding-left: 7px;
-                } 
+                }
             }
         }
         p {
@@ -515,9 +520,13 @@
         }
     }
 }
+
+
 /*----- blog details css end -----*/
 
+
 /*----- show content css start -----*/
+
 .show-content {
     box-shadow: 0px 3px 12px 0px rgba(118, 118, 118, 0.19);
     display: none;
@@ -538,15 +547,16 @@
         animation: fadeIn 0.5s;
     }
 }
+
 .content-list {
     padding: 30px 50px 15px;
     display: flex;
     flex-wrap: wrap;
     // res
-    @media #{$md-device}{
+    @media #{$md-device} {
         padding: 30px 0 15px;
     }
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         padding: 30px 30px 15px;
     }
     li {
@@ -557,7 +567,7 @@
         line-height: 1.4;
         margin-bottom: 15px;
         // res
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             flex-basis: 100%;
             padding: 0;
         }
@@ -579,18 +589,22 @@
 
 // animation
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
+    from {
+        opacity: 0;
     }
-    to { 
-        opacity: 1; 
+    to {
+        opacity: 1;
     }
 }
+
+
 /*----- show content css end -----*/
 
+
 /*----- sidebar css start -----*/
+
 .sidebar-widget {
-    @media #{$md-device, $sm-device}{
+    @media #{$md-device, $sm-device} {
         margin-top: 68px;
     }
     .label {
@@ -614,17 +628,21 @@
                 right: -50px;
             }
         }
-        
     }
 }
+
+
 /*----- sidebar css end -----*/
 
+
 /*----- comments form css start -----*/
+
 .comment-form {
     .contact-title {
         font-weight: 600;
         margin-bottom: 15px;
     }
 }
-/*----- comments form css end -----*/
 
+
+/*----- comments form css end -----*/

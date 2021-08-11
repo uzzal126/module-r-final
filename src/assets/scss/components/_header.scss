@@ -1,5 +1,5 @@
-
 /*------ main menu start ------*/
+
 .main-menu {
     ul {
         display: flex;
@@ -11,7 +11,6 @@
         font-weight: 400;
         margin-right: 27px;
         position: relative;
-        
         a {
             color: $overlay-color;
             display: block;
@@ -47,7 +46,6 @@
             transition: 0.4s;
             z-index: 2;
             pointer-events: none;
-            
             li {
                 flex-basis: 100%;
                 margin-right: 0;
@@ -74,7 +72,7 @@
                         display: none;
                     }
                 }
-                &:hover > {
+                &:hover> {
                     a {
                         color: $theme-color-primary;
                         padding-left: 35px;
@@ -145,7 +143,7 @@
                 }
             }
         }
-        &:hover > {
+        &:hover> {
             a {
                 color: $theme-color-primary;
                 &::after {
@@ -160,15 +158,18 @@
                 pointer-events: visible;
             }
             .mega-menu {
-                transform: translate(-50%, 0px); 
+                transform: translate(-50%, 0px);
             }
         }
     }
 }
 
+
 /*------ main menu end ------*/
 
+
 /*------ sticky menu style start ------*/
+
 .sticky {
     &.is-sticky {
         top: 0;
@@ -187,6 +188,7 @@
     }
 }
 
+
 /*------ sticky menu style end ------*/
 
 // header transparent css
@@ -198,7 +200,7 @@
     z-index: 999;
     background-color: transparent;
     // res
-    @media #{$md-device, $sm-device}{
+    @media #{$md-device, $sm-device} {
         position: static;
     }
 }
@@ -209,14 +211,13 @@
     justify-content: flex-end;
 }
 
-
 // header search button
 .search {
     &-btn {
         width: 80px;
         text-align: right;
         // res
-        @media #{$md-device, $sm-device}{
+        @media #{$md-device, $sm-device} {
             width: 60px;
             align-self: normal;
         }
@@ -228,20 +229,20 @@
         text-align: center;
         background-color: $theme-color-alternate;
         // res
-        @media #{$md-device, $sm-device}{
+        @media #{$md-device, $sm-device} {
             background-color: transparent;
         }
         i {
             color: $white;
             font-size: 18px;
             // res
-            @media #{$md-device, $sm-device}{
+            @media #{$md-device, $sm-device} {
                 color: $black;
             }
         }
         &:hover {
             background-color: $theme-color-secondary;
-            @media #{$md-device, $sm-device}{
+            @media #{$md-device, $sm-device} {
                 background-color: transparent;
                 i {
                     color: $theme-color-alternate;
@@ -251,7 +252,9 @@
     }
 }
 
+
 /*----- offcanvas search box start -----*/
+
 .off-canvas-search {
     width: 100%;
     top: 0;
@@ -270,7 +273,7 @@
         height: 50px;
         padding: 0 20px;
         width: 100%;
-        border: 1px solid #26b6b6;
+        border: 1px solid #1859a8;
         background-color: transparent;
     }
     &.show {
@@ -279,20 +282,23 @@
         transform: rotateX(0);
     }
     // placeholder text style
-    ::placeholder {
+     ::placeholder {
         color: $white;
         font-style: italic;
         font-weight: 300;
         opacity: 0.8;
     }
 }
+
 .off-canvas-wrapper {
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
 }
+
 .off-canvas-inner {
     width: calc(100% - 60px);
 }
+
 .off-canvas-close {
     width: 50px;
     height: 50px;
@@ -300,7 +306,7 @@
     font-size: 30px;
     line-height: 50px;
     text-align: center;
-    border: 1px solid #26b6b6;
+    border: 1px solid #1859a8;
     i {
         display: block;
         transition: 0.4s;
@@ -313,15 +319,17 @@
         }
     }
 }
+
+
 /*----- offcanvas search box end -----*/
 
 
 /*----- header top area start -----*/
+
 .header-top {
     padding: 15px 0;
     margin-bottom: 13px;
     &__search {
-        
         .search-field {
             border: none;
             border-bottom: 2px solid #c6c6c6;
@@ -343,9 +351,8 @@
                 color: $theme-color-alternate;
             }
         }
-
         // placeholder text style
-        ::placeholder {
+         ::placeholder {
             color: #888;
             font-size: 14px;
             font-style: normal;
@@ -369,4 +376,6 @@
         }
     }
 }
+
+
 /*----- header top area end -----*/
