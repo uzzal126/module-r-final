@@ -1,5 +1,6 @@
-
 /*----- feature product item css start -----*/
+
+
 /* .feature-item {
     box-shadow: 0px 3px 12px 0px rgba(118, 118, 118, 0.19);
     &__image {
@@ -63,7 +64,6 @@
         }
     }
 } */
-
 
 .feature-item {
     box-shadow: 0px 3px 12px 0px rgba(118, 118, 118, 0.19);
@@ -160,9 +160,9 @@
                 color: $theme-color-primary;
             }
             .feature-title {
-                // color: $white;
+                color: $theme-color-primary;
                 &:hover {
-                    color: $theme-color-primary;
+                    text-decoration: underline;
                 }
             }
             &--footer {
@@ -175,13 +175,17 @@
         }
     }
 }
+
+
 /*----- feature product item css end -----*/
 
+
 /*----- deal product start -----*/
+
 .deal-product-area {
     .row {
         [class*="col-6"] {
-            @media #{$xxs-device}{
+            @media #{$xxs-device} {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
@@ -222,9 +226,9 @@
     }
     &:hover {
         .deal-product {
-            &__image {   
+            &__image {
                 img {
-                    border-color: $theme-color-alternate;
+                    border-color: $white;
                 }
             }
             &__name {
@@ -241,12 +245,16 @@
         }
     }
 }
+
+
 /*----- deal product end -----*/
 
+
 /*----- also like product css start -----*/
+
 .also-like-product-heading {
     //res
-    @media #{$md-device, $sm-device}{
+    @media #{$md-device, $sm-device} {
         margin-top: -5px;
         margin-bottom: 47px;
     }
@@ -276,7 +284,6 @@
     }
 }
 
-
 .like-product {
     position: relative;
     text-align: center;
@@ -293,7 +300,7 @@
             font-weight: 400;
             margin-bottom: 5px;
             &:hover {
-                color: $theme-color-primary;
+                text-decoration: underline;
             }
         }
         .price {
@@ -305,6 +312,11 @@
         .thumb {
             img {
                 transform: scale(1.1);
+            }
+        }
+        .content {
+            .name {
+                color: $theme-color-primary;
             }
         }
     }
@@ -362,7 +374,6 @@
     &.swiper-button-next {
         right: 0;
     }
-
     &:after {
         display: none;
     }
@@ -370,9 +381,13 @@
         color: $theme-color-primary;
     }
 }
+
+
 /*----- also like product css end -----*/
 
+
 /*----- product item css start -----*/
+
 .product-item {
     border: 1px solid #e4e4e4;
     text-align: center;
@@ -387,7 +402,7 @@
             font-weight: 400;
             margin-bottom: 12px;
             &:hover {
-                color: $theme-color-alternate;
+                text-decoration: underline;
             }
         }
         .price {
@@ -407,11 +422,11 @@
             margin-right: 25px;
             padding-right: 30px;
             //res
-            @media #{$sm-device}{
+            @media #{$sm-device} {
                 margin-right: 0px;
                 padding-right: 8px;
             }
-            @media #{$xs-device}{
+            @media #{$xs-device} {
                 margin-right: 15px;
                 padding-right: 20px;
             }
@@ -447,7 +462,14 @@
                     transform: scale(1.1);
                 }
             }
+            &__content {
+                .title {
+                    color: $theme-color-primary;
+                }
+            }
         }
     }
 }
+
+
 /*----- product item css end -----*/

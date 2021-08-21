@@ -1,17 +1,16 @@
 /*----- best product css start -----*/
+
 .best-product-area {
     margin-top: -60px;
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         margin-top: -32px;
     }
-
     .swiper-container {
         margin: 0 30px;
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             margin: 0 15px
         }
     }
-
     .swiper-slide {
         &-active {
             .best-product {
@@ -33,13 +32,14 @@
         }
     }
 }
+
 .best-product {
     border: 1px solid #98b8d3;
     background-color: $white;
     &__inner {
         padding: 30px;
         // res
-        @media #{$md-device, $sm-device}{
+        @media #{$md-device, $sm-device} {
             padding: 15px;
             text-align: center;
         }
@@ -64,25 +64,24 @@
                 position: absolute;
             }
         }
-
     }
     &__content {
         margin: 0 30px;
         padding-bottom: 40px;
         border-bottom: 1px solid #e6e6e6;
         // res
-        @media #{$md-device, $sm-device}{
+        @media #{$md-device, $sm-device} {
             margin: 0 15px;
         }
         .title {
             color: #072944;
             line-height: 1.3;
             // res
-            @media #{$md-device}{
+            @media #{$md-device} {
                 font-size: 20px;
             }
             &:hover {
-                color: $theme-color-alternate;
+                text-decoration: underline;
             }
         }
         .ratings {
@@ -100,7 +99,7 @@
             text-transform: uppercase;
             display: block;
             padding: 20px 0 17px;
-            @media #{$xxs-device}{
+            @media #{$xxs-device} {
                 font-size: 16px;
             }
             &:hover {
@@ -123,10 +122,18 @@
                 filter: grayscale(5);
             }
         }
+        .best-product__content {
+            .title {
+                color: $theme-color-primary;
+            }
+        }
     }
 }
+
 .ratings {
     line-height: 1;
     color: $theme-color-alternate;
 }
+
+
 /*----- best product css end -----*/

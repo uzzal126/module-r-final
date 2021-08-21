@@ -1,4 +1,5 @@
 /*------- common css start -------*/
+
 .fix {
     overflow: hidden;
 }
@@ -12,7 +13,7 @@
 }
 
 .bg-gradient {
-    background-image: linear-gradient(0, #f6f6fa , #fff);
+    background-image: linear-gradient(0, #f6f6fa, #fff);
 }
 
 .bg-primary {
@@ -33,9 +34,12 @@
     background-repeat: no-repeat;
 }
 
+
 /*------- common css end -------*/
 
+
 /* ----scroll to top css start ----*/
+
 .scroll-top {
     color: $white;
     font-size: 25px;
@@ -52,20 +56,20 @@
     border-radius: 50%;
     background-color: darken($theme-color-primary, 10%);
     //res
-    @media #{$xs-device}{
+    @media #{$xs-device} {
         bottom: 30px;
     }
-
     &.not-visible {
         bottom: -50px;
         visibility: hidden;
         opacity: 0;
     }
-
     &:hover {
         background-color: $theme-color-alternate;
     }
 }
+
+
 /* ----scroll to top css end ----*/
 
 .pulse {
@@ -73,7 +77,6 @@
         width: 1px;
         height: 0;
         margin: 0 auto;
-
         &:before,
         &:after {
             opacity: 0;
@@ -85,8 +88,8 @@
             top: 50%;
             left: 50%;
             border-radius: 50%;
-            border: 1px solid $theme-color-alternate;
-            transform: translate(-50%,-50%);
+            border: 1px solid $white;
+            transform: translate(-50%, -50%);
             animation: gradationMask 1.5s linear infinite;
         }
     }
@@ -103,11 +106,9 @@
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-
     90% {
         opacity: 1;
     }
-
     100% {
         border-color: transparent;
         opacity: 0;
@@ -119,16 +120,16 @@
 .latest-deal-area {
     padding-top: 155px;
     // res
-    @media #{$xlmid-device}{
+    @media #{$xlmid-device} {
         padding-top: 44px;
     }
-    @media #{$lg-device}{
+    @media #{$lg-device} {
         padding-top: 60px;
     }
-    @media #{$md-device}{
+    @media #{$md-device} {
         padding-top: 0;
     }
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         padding-top: 0;
     }
 }
@@ -170,37 +171,42 @@
         opacity: 0;
     }
 }
+
 .custom-control-input:checked~.custom-control-label::before {
     background-color: darken($theme-color-primary, 10%);
     border-color: darken($theme-color-primary, 10%);
     box-shadow: none;
 }
 
-.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
     border-color: $white;
 }
 
 .custom-control-input:focus~.custom-control-label::before {
     box-shadow: none;
 }
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
 }
 
+
 /*----- page header css start -----*/
+
 .main-wrapper {
     padding-top: 85px;
     // res
-    @media #{$md-device, $sm-device}{
+    @media #{$md-device, $sm-device} {
         padding-top: 0;
     }
 }
+
 .page-header-wrapper {
     padding: 128px 0;
     display: flex;
     align-items: center;
     // res
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         padding: 75px 0;
     }
     .page-title {
@@ -220,23 +226,25 @@
             background-color: $theme-color-primary;
         }
         // res
-        @media #{$md-device}{
+        @media #{$md-device} {
             font-size: 36px;
         }
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             font-size: 32px;
         }
-        @media #{$xxs-device}{
+        @media #{$xxs-device} {
             font-size: 24px;
         }
     }
 }
+
+
 /*----- page header css end -----*/
 
 .item-view-bar {
     margin-top: -68px;
     // res
-    @media #{$lg-device, $md-device, $sm-device}{
+    @media #{$lg-device, $md-device, $sm-device} {
         margin-top: 30px;
     }
 }
@@ -248,23 +256,24 @@
     background-color: $white;
     box-shadow: 0px 3px 10px 0px rgba(40, 43, 50, 0.29);
     // res
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         display: block;
     }
-    @media #{$xs-device}{
+    @media #{$xs-device} {
         padding: 30px 30px;
     }
-    @media #{$xxs-device}{
+    @media #{$xxs-device} {
         padding: 30px 15px;
     }
 }
+
 .item-sorting {
     width: 270px;
     // res
-    @media #{$md-device}{
+    @media #{$md-device} {
         width: 200px;
     }
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         width: 100%;
     }
     .nice-select {
@@ -290,18 +299,19 @@
         }
     }
 }
+
 .item-filter-button {
     padding-left: 70px;
     // res
-    @media #{$md-device}{
+    @media #{$md-device} {
         padding-left: 35px;
     }
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         padding-left: 0;
         margin-top: 60px;
     }
     ul {
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -313,13 +323,13 @@
                 margin-right: 0;
             }
             // res
-            @media #{$lg-device}{
+            @media #{$lg-device} {
                 margin-right: 50px;
             }
-            @media #{$md-device}{
+            @media #{$md-device} {
                 margin-right: 20px;
             }
-            @media #{$sm-device}{
+            @media #{$sm-device} {
                 margin-right: 0;
             }
             .filter-button {
@@ -334,7 +344,7 @@
                     border: 1px solid $theme-color-primary;
                 }
                 // res
-                @media #{$xxs-device}{
+                @media #{$xxs-device} {
                     font-size: 15px;
                     padding: 5px 10px;
                 }
@@ -347,30 +357,30 @@
     &__category {
         justify-content: space-between;
         // res
-        @media #{$md-device}{
+        @media #{$md-device} {
             display: block;
         }
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             padding: 45px 30px;
         }
-        @media #{$xs-device}{
+        @media #{$xs-device} {
             padding: 30px 15px;
         }
-        @media #{$xxs-device}{
+        @media #{$xxs-device} {
             display: flex;
             flex-direction: column;
         }
         .item-sorting {
             // res
-            @media #{$lg-device}{
+            @media #{$lg-device} {
                 width: 200px;
             }
-            @media #{$md-device, $sm-device}{
+            @media #{$md-device, $sm-device} {
                 width: 50%;
                 float: left;
                 padding: 0 15px;
             }
-            @media #{$xxs-device}{
+            @media #{$xxs-device} {
                 width: 100%;
                 float: none;
                 padding: 0;
@@ -378,25 +388,25 @@
             }
         }
         .item-filter-button {
-            @media #{$md-device}{
+            @media #{$md-device} {
                 margin-top: 60px;
                 text-align: center;
             }
-            @media #{$xxs-device}{
+            @media #{$xxs-device} {
                 margin-top: 0;
             }
             ul {
-                @media #{$sm-device}{
+                @media #{$sm-device} {
                     justify-content: center;
                 }
                 li {
                     &:last-child {
                         margin-right: 0;
                     }
-                    @media #{$xlmid-device}{
+                    @media #{$xlmid-device} {
                         margin-right: 35px;
                     }
-                    @media #{$lg-device}{
+                    @media #{$lg-device} {
                         margin-right: 20px;
                     }
                 }
@@ -407,6 +417,7 @@
 
 
 /*----- social link css start -----*/
+
 .social-link {
     a {
         width: 37px;
@@ -434,9 +445,13 @@
         }
     }
 }
+
+
 /*----- social link css end -----*/
 
+
 /*----- shape css start -----*/
+
 .shape-2 {
     height: 40px;
     top: 0;
@@ -445,11 +460,14 @@
     border-left: 13px solid $white;
     border-right: 12px solid $white;
     border-bottom: 13px solid transparent;
-    
 }
+
+
 /*----- shape css end -----*/
 
+
 /*----- product overlay css start -----*/
+
 .product-share-link {
     top: 20px;
     right: 20px;
@@ -466,7 +484,6 @@
         line-height: 30px;
         text-align: center;
         cursor: pointer;
-        
         .social-link {
             opacity: 0;
             visibility: hidden;
@@ -503,7 +520,7 @@
                 }
             }
         }
-    } 
+    }
 }
 
 .overlay {
@@ -534,12 +551,13 @@
         visibility: hidden;
         transition: 0.4s;
         &__btn {
-            color: $white;
+            color: $black;
             font-size: 15px;
             display: inline-block;
             border: 1px solid $white;
             line-height: 1;
             padding: 11px 20px;
+            background-color: $white;
         }
     }
 }
@@ -579,15 +597,17 @@
         }
     }
 }
+
+
 /*----- product overlay css end -----*/
 
 .gallery-thumbs {
     margin-top: -80px;
     // res
-    @media #{$md-device}{
+    @media #{$md-device} {
         margin-top: -55px;
     }
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         margin-top: -40px;
     }
     .swiper-wrapper {
@@ -608,7 +628,6 @@
     }
 }
 
-
 // swiper pagination style
 .swiper-pagination {
     color: $theme-color-secondary;
@@ -624,10 +643,10 @@
         left: 25px;
         display: inline-block;
         // res
-        @media #{$xl-device}{
+        @media #{$xl-device} {
             bottom: 58px;
         }
-        @media #{$sm-device}{
+        @media #{$sm-device} {
             bottom: 4px;
         }
         .icon {
@@ -670,10 +689,10 @@
         outline: none;
     }
     // res
-    @media #{$xl-device}{
+    @media #{$xl-device} {
         bottom: 60px;
     }
-    @media #{$sm-device}{
+    @media #{$sm-device} {
         bottom: 7px;
     }
     &:after {
@@ -711,7 +730,8 @@
     &:hover {
         background-color: $white;
     }
-} 
+}
+
 .swiper-button-round {
     border-radius: 50%;
     border: 1px solid $theme-color-secondary;
@@ -719,6 +739,7 @@
 
 
 /*----- product tab menu start -----*/
+
 .product-tab-menu {
     margin: 23px 0 50px;
     ul {
@@ -758,4 +779,6 @@
         }
     }
 }
+
+
 /*----- product tab menu end -----*/

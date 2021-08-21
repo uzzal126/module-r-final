@@ -1,80 +1,71 @@
-
-(function ($) {
+(function($) {
     'use strict'
 
-    // preloader
-    jQuery(window).on('load', function(){
-		setTimeout(function(){
-            jQuery('.open-preloader').addClass('loaded');
-        }, 1000);
-	});
-
-    
     // custom scroll bar js
     var windows = $(window);
-    $('.custom-scroll').each(function(){
+    $('.custom-scroll').each(function() {
         var ps = new PerfectScrollbar($(this)[0]);
-        if(windows.width <= 991) {
+        if (windows.width <= 991) {
             ps.destroy();
         }
     });
 
 
     // offcanvas search box js
-    $('.search-trigger').on('click',function() {
+    $('.search-trigger').on('click', function() {
         $('.off-canvas-search').addClass('show');
     })
 
-    $('.off-canvas-close').on('click',function() {
+    $('.off-canvas-close').on('click', function() {
         $('.off-canvas-search').removeClass('show');
     })
 
 
     // Sticky menu
     var $window = $(window)
-    $window.on('scroll', function () {
+    $window.on('scroll', function() {
         var scroll = $window.scrollTop()
         if (scroll < 300) {
-        $('.sticky').removeClass('is-sticky')
+            $('.sticky').removeClass('is-sticky')
         } else {
-        $('.sticky').addClass('is-sticky')
+            $('.sticky').addClass('is-sticky')
         }
     })
 
 
     // Off Canvas Open close
-  $('.mobile-menu-btn').on('click', function () {
-    $('body').addClass('fix')
-    $('.off-canvas-mobile-menu').addClass('open')
-  })
+    $('.mobile-menu-btn').on('click', function() {
+        $('body').addClass('fix')
+        $('.off-canvas-mobile-menu').addClass('open')
+    })
 
-  $('.btn-close-off-canvas,.off-canvas-overlay').on('click', function () {
-    $('body').removeClass('fix')
-    $('.off-canvas-mobile-menu').removeClass('open')
-  })
+    $('.btn-close-off-canvas,.off-canvas-overlay').on('click', function() {
+        $('body').removeClass('fix')
+        $('.off-canvas-mobile-menu').removeClass('open')
+    })
 
-  // offcanvas mobile menu
-  var $offCanvasNav = $('.mobile-menu')
+    // offcanvas mobile menu
+    var $offCanvasNav = $('.mobile-menu')
 
-  var $offCanvasNavSubMenu = $offCanvasNav.find('.dropdown')
+    var $offCanvasNavSubMenu = $offCanvasNav.find('.dropdown')
 
-  /* Add Toggle Button With Off Canvas Sub Menu */
-  $offCanvasNavSubMenu
-    .parent()
-    .prepend('<span class="menu-expand"><i></i></span>')
+    /* Add Toggle Button With Off Canvas Sub Menu */
+    $offCanvasNavSubMenu
+        .parent()
+        .prepend('<span class="menu-expand"><i></i></span>')
 
-  /* Close Off Canvas Sub Menu */
-  $offCanvasNavSubMenu.slideUp()
+    /* Close Off Canvas Sub Menu */
+    $offCanvasNavSubMenu.slideUp()
 
-  /* Category Sub Menu Toggle */
-    $offCanvasNav.on('click', 'li a, li .menu-expand', function (e) {
+    /* Category Sub Menu Toggle */
+    $offCanvasNav.on('click', 'li a, li .menu-expand', function(e) {
         var $this = $(this)
         if (
-        $this
-        .parent()
-        .attr('class')
-        .match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
-        ($this.attr('href') === '#' || $this.hasClass('menu-expand'))
+            $this
+            .parent()
+            .attr('class')
+            .match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
+            ($this.attr('href') === '#' || $this.hasClass('menu-expand'))
         ) {
             e.preventDefault()
             if ($this.siblings('ul:visible').length) {
@@ -83,16 +74,16 @@
             } else {
                 $this.parent('li').addClass('active')
                 $this
-                .closest('li')
-                .siblings('li')
-                .removeClass('active')
-                .find('li')
-                .removeClass('active')
+                    .closest('li')
+                    .siblings('li')
+                    .removeClass('active')
+                    .find('li')
+                    .removeClass('active')
                 $this
-                .closest('li')
-                .siblings('li')
-                .find('ul:visible')
-                .slideUp()
+                    .closest('li')
+                    .siblings('li')
+                    .find('ul:visible')
+                    .slideUp()
                 $this.siblings('ul').slideDown()
             }
         }
@@ -101,11 +92,11 @@
 
     //nice select active start
     $('select').niceSelect();
-    
+
 
     // hero slider active js
-    $(document).ready(function () {
-        var mySwiper = new Swiper ('.hero-slider-active', {
+    $(document).ready(function() {
+        var mySwiper = new Swiper('.hero-slider-active', {
             loop: true,
             speed: 1000,
             autoplay: false,
@@ -125,13 +116,13 @@
 
 
         // best product active js
-        var mySwiper = new Swiper ('.best-product-active', {
+        var mySwiper = new Swiper('.best-product-active', {
             loop: true,
             speed: 1000,
             autoplay: false,
             spaceBetween: 0,
             touchRatio: 0,
-            slidesPerView : 3,
+            slidesPerView: 3,
             centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -140,17 +131,17 @@
             },
             // Responsive breakpoints
             breakpoints: {
-                992:{
-                    slidesPerView : 3
+                992: {
+                    slidesPerView: 3
                 },
 
-                576:{
-                    slidesPerView : 2,
+                576: {
+                    slidesPerView: 2,
                     centeredSlides: false,
                 },
 
-                300:{
-                    slidesPerView : 1,
+                300: {
+                    slidesPerView: 1,
                     centeredSlides: false,
                 }
             }
@@ -166,11 +157,11 @@
             watchSlidesProgress: true,
         });
 
-        var mySwiper = new Swiper ('.blog-slider-active', {
+        var mySwiper = new Swiper('.blog-slider-active', {
             loop: true,
             speed: 1000,
             spaceBetween: 30,
-            slidesPerView : 1,
+            slidesPerView: 1,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -183,11 +174,11 @@
 
 
         // also like product
-        var mySwiper = new Swiper ('.like-product-carousel', {
+        var mySwiper = new Swiper('.like-product-carousel', {
             loop: true,
             speed: 1000,
             spaceBetween: 20,
-            slidesPerView : 4,
+            slidesPerView: 4,
             centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -196,18 +187,18 @@
             },
             // Responsive breakpoints
             breakpoints: {
-                1200:{
-                    slidesPerView : 4
+                1200: {
+                    slidesPerView: 4
                 },
-                992:{
-                    slidesPerView : 3
+                992: {
+                    slidesPerView: 3
                 },
-                576:{
-                    slidesPerView : 2,
+                576: {
+                    slidesPerView: 2,
                     centeredSlides: false,
                 },
-                300:{
-                    slidesPerView : 1,
+                300: {
+                    slidesPerView: 1,
                     centeredSlides: false,
                 }
             }
@@ -223,16 +214,16 @@
             direction: 'vertical',
             // Responsive breakpoints
             breakpoints: {
-                576:{
+                576: {
                     direction: 'vertical',
                 },
-                320:{
-                    slidesPerView : 4,
+                320: {
+                    slidesPerView: 4,
                     direction: 'horizontal'
                 }
             }
         });
-        
+
         var productCarousel = new Swiper(".product-carousel", {
             loop: false,
             speed: 800,
@@ -249,11 +240,11 @@
 
 
         // similar product
-        var mySwiper = new Swiper ('.similar-product-carousel', {
+        var mySwiper = new Swiper('.similar-product-carousel', {
             loop: true,
             speed: 1000,
             spaceBetween: 20,
-            slidesPerView : 4,
+            slidesPerView: 4,
             centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -262,18 +253,18 @@
             },
             // Responsive breakpoints
             breakpoints: {
-                1200:{
-                    slidesPerView : 4
+                1200: {
+                    slidesPerView: 4
                 },
-                992:{
-                    slidesPerView : 3
+                992: {
+                    slidesPerView: 3
                 },
-                576:{
-                    slidesPerView : 2,
+                576: {
+                    slidesPerView: 2,
                     centeredSlides: false,
                 },
-                300:{
-                    slidesPerView : 1,
+                300: {
+                    slidesPerView: 1,
                     centeredSlides: false,
                 }
             }
@@ -284,38 +275,32 @@
 
     // Background Image JS start
     var bgSelector = $('.bg-img')
-        bgSelector.each(function (index, elem) {
+    bgSelector.each(function(index, elem) {
         var element = $(elem)
         var bgSource = element.data('bg')
         element.css('background-image', 'url(' + bgSource + ')')
     })
 
 
-    // blog content show hide js
-    $('.content-trigger').on('click',function() {
-        $('.show-content').toggleClass('show');
-    })
-
-
     // Scroll to top active js
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
         if ($(this).scrollTop() > 600) {
             $('.scroll-top').removeClass('not-visible')
         } else {
             $('.scroll-top').addClass('not-visible')
         }
     })
-    $('.scroll-top').on('click', function (event) {
+    $('.scroll-top').on('click', function(event) {
         $('html,body').animate({
-            scrollTop: 0
-        },
-        1000
+                scrollTop: 0
+            },
+            1000
         )
     })
 
 
     // video player active js
-	var plyrVideo = new Plyr('.plyr-video'),
+    var plyrVideo = new Plyr('.plyr-video'),
         plyrAudio = new Plyr('.plyr-audio'),
         plyrYoutube = new Plyr('.plyr-youtube'),
         plyrVimeo = new Plyr('.plyr-vimeo');

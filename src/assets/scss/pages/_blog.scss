@@ -80,7 +80,7 @@
                 font-size: 20px;
             }
             &:hover {
-                color: $theme-color-primary;
+                text-decoration: underline;
             }
             &::before {
                 bottom: -10px;
@@ -97,6 +97,13 @@
             font-size: 18px;
             line-height: 1.5;
             margin-bottom: 15px;
+        }
+    }
+    &:hover {
+        .blog-post__content {
+            .blog-post__content--title {
+                color: $theme-color-primary;
+            }
         }
     }
 }
