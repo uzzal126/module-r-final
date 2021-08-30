@@ -154,6 +154,8 @@
 
 /*----- promotional banner css start -----*/
 .promotional-banner-area {
+    display: flex;
+    align-items: center;
     height: 236px;
     background-image: url('../img/bg/cat-banner.jpg');
     position: relative;
@@ -164,20 +166,11 @@
 }
 .promotional-banner {
     &__content {
-        top: 50%;
-        left: 0;
-        position: absolute;
-        padding: 0 65px;
-        transform: translateY(-50%);
         width: 100%;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        //res
-        @media #{$sm-device}{
-            padding: 0 15px;
-        }
 
         .title {
             font-size: 48px;
@@ -210,7 +203,7 @@
                 background-color: $theme-color-alternate;
             }
             //res
-            @media #{$lg-device, $md-device, $sm-device}{
+            @media #{$xlmid-device, $lg-device, $md-device, $sm-device}{
                 margin-top: 30px;
             }
         }

@@ -44,20 +44,17 @@
         $('.off-canvas-mobile-menu').removeClass('open')
     })
 
-    // offcanvas mobile menu
+    // mobile menu
     var $offCanvasNav = $('.mobile-menu')
-
     var $offCanvasNavSubMenu = $offCanvasNav.find('.dropdown')
-
-    /* Add Toggle Button With Off Canvas Sub Menu */
     $offCanvasNavSubMenu
         .parent()
         .prepend('<span class="menu-expand"><i></i></span>')
 
-    /* Close Off Canvas Sub Menu */
+    /* Close Sub Menu */
     $offCanvasNavSubMenu.slideUp()
 
-    /* Category Sub Menu Toggle */
+    /* Sub Menu */
     $offCanvasNav.on('click', 'li a, li .menu-expand', function(e) {
         var $this = $(this)
         if (
@@ -148,7 +145,7 @@
         });
 
 
-        // blog slider actic=ve js
+        // blog slider active js
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
             slidesPerView: "auto",
