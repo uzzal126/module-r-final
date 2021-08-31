@@ -157,6 +157,7 @@
         var mySwiper = new Swiper('.blog-slider-active', {
             loop: true,
             speed: 1000,
+            effect: "fade",
             spaceBetween: 30,
             slidesPerView: 1,
             navigation: {
